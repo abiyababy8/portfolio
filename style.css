@@ -1,0 +1,275 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* different units: px,vh,rem; 1 vh = 19.2px */
+    background-color: white;
+
+}
+
+.navbar {
+    display: flex;
+    width: 84%;
+    justify-content: space-between;
+    /* to allign the both contents left and right  */
+    margin-left: 100px;
+    align-items: center;
+    /* to vertically center an item */
+}
+
+#logo {
+    width: 130px;
+}
+
+.linkItem {
+    display: inline-block;
+    /* display block elements in one line */
+    margin: 10px 20px;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black
+}
+
+.links:hover {
+    color: orange;
+}
+
+#lastname {
+    color: orange;
+}
+
+.title {
+    margin-top: 13%;
+    margin-left: 12%;
+}
+
+.title_h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.download {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
+.images {
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.imagegroup {
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+
+.images:hover #girl {
+    left: 40%;
+}
+
+.images:hover #shape {
+    bottom: 40px;
+}
+
+#about {
+    margin: 20% 8% 0% 8%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 32px;
+}
+
+.heading span {
+    color: orange;
+    font-size: 20px;
+}
+
+.about_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 1 fr = 225px */
+    column-gap: 2rem;
+    /* 1rem = 16px */
+    margin-top: 3rem;
+}
+
+.about_img img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.about_para p {
+    text-align: justify;
+    font-size: 20px;
+    margin-right: 2rem;
+}
+
+.information {
+    margin-top: 25px;
+}
+
+.info_box span {
+    margin-left: 1.5rem;
+    font-size: 20px;
+}
+
+.info_box {
+    margin-bottom: 20px;
+}
+
+#skills {
+    margin: 5% 8% 0% 8%;
+}
+
+.skill_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.progress_container {
+    margin-top: 10px;
+
+}
+
+.progress_bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem 0px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.html_bar {
+    width: 95%;
+    background-color: orange;
+}
+
+.css_bar {
+    width: 90%;
+    background-color: orange;
+}
+
+.js_bar {
+    width: 80%;
+    background-color: orange;
+}
+
+.re_bar {
+    width: 75%;
+    background-color: orange;
+}
+
+.skill_image {
+    width: 90%;
+    padding-left: 4rem;
+}
+
+#contact {
+    margin: 5% 8% 0% 8%;
+}
+
+.icon_set {
+    display: flex;
+    /* to align block items in same line */
+    align-items: center;
+    /* to vertically center an item */
+    justify-content: center;
+    /* to align items horizondally center */
+    margin-top: 2rem;
+}
+
+.icon,
+.up_arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+.icon i {
+    font-size: 2rem;
+    color: black;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.icon:hover {
+    background-image: linear-gradient(to bottom right, yellow, orange, red);
+}
+
+.icon:hover i {
+    color: white;
+    animation: shake 0.75s;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+.up_arrow {
+    background-image: linear-gradient(to bottom right, yellow, orange, red);
+    float: right;
+    margin: 20px 10px 5px 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
